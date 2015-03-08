@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Baskerville';
+    src: url('../../fonts/authentic_oriya_regular-webfont.eot');
+    src: url('../../fonts/authentic_oriya_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/authentic_oriya_regular-webfont.woff') format('woff'),
+         url('../../fonts/authentic_oriya_regular-webfont.ttf') format('truetype'),
+         url('../../fonts/authentic_oriya_regular-webfont.svg#oriya_authentic_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body[data-state=normal] {
+  background: #fff;
+  background-color: #fff;
+  color: black; }
+
+body[data-state=invert] {
+  background: black;
+  background-color: black;
+  color:#fff;}
+
+.reveal {
+  font-family: 'Baskerville', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #000; }
+
+::selection {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+.reveal .slides > section, .reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit; }
+
+.reveal .slides {
+	position: absolute;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+	margin: 0;
+	color: #000;
+	font-family: 'Baskerville', sans-serif;
+	font-weight: normal;
+	line-height: 1.3;
+	letter-spacing: normal;
+	text-transform: none;
+	text-shadow: none;
+	word-wrap: break-word;
+	font-size: 90%;
+	display: block;
+	min-width: 20%;
+	max-width: 20%;
+	float: left;
+	opacity: 1;
+	text-align: left;
+	line-height: 40px;
+	margin-top: 60px;
+	 }
+
+body[data-state=invert] .reveal h1, body[data-state=normal] .reveal h2 {
+	color: #000;
+}
+
+body[data-state=invert] .reveal h1, body[data-state=invert] .reveal h2 {
+	color: #fff;
+}
+
+
+
+/*********************************************
+ * OTHER
+ *********************************************/
+
+.reveal p {
+	margin: 0;
+	line-height: 1.3;
+	font-size: 90%;
+	float: left;
+	display: block;
+	opacity: 1;
+	text-align: left;
+	max-width: 80%;
+	clear: right;
+	color: black;
+	line-height: 40px;
+	margin-top: 60px;
+  }
+
+body[data-state=normal] .reveal p {
+	color: black;
+  }
+
+body[data-state=invert] .reveal p {
+	color: #fff;
+  }
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img, .reveal video, .reveal iframe {
+  max-width: 100%;
+  max-height: 100%; }
+
+.reveal strong, .reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+.reveal a:hover {
+  color: blue;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff; }
+
+body[data-state=normal] .reveal a {
+	color: black;
+  }
+
+body[data-state=invert] .reveal a {
+	color: #fff;
+  }
+
+body[data-state=normal] .reveal a:hover, body[data-state=invert] .reveal a:hover {
+	color: blue;
+  }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+	margin: 0px auto 0px auto;
+	display: block;
+	float: left;
+	margin-top: 60px;
+	 }
+
+body[data-state=normal] .specimen {
+	filter:none;
+	-webkit-filter:none;
+	-o-filter:none;
+}
+body[data-state=invert] .specimen {
+    filter:invert(100%);
+	-webkit-filter:invert(1);
+	-o-filter:invert(100%);
+}
+
+.reveal a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #00008B;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #00008B; }
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #00008B; }
+
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #00008B; }
+
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #00008B; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #0000f1; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #0000f1; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #0000f1; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #0000f1; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+body[data-state=normal] .reveal .progress {
+  background: none }
+
+body[data-state=normal] .reveal .progress span {
+  background: black;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+body[data-state=invert] .reveal .progress {
+  background: none }
+
+body[data-state=invert] .reveal .progress span {
+  background: #fff;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE TOOLS
+ *********************************************/
+.reveal .slide-number {
+	color: black;
+	position: fixed;
+	display: block;
+	right: 25px;
+	bottom: 25px;
+	opacity: 1;
+	font-size: 24px;
+ }
+
+ .reveal .invert {
+	position: fixed;
+	display: block;
+	left: 0px;
+	bottom: 0px;
+	opacity: 1;
+ }
+
+p.nav-info {
+	display: none;
+ }
+
+
+
+
+
+
+ /*********************************************
+ * MEDIA QUERIES
+ *********************************************/
+
+ @media only screen and (min-width: 600px) {
+	.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p,  .reveal .invert {
+	font-size: 55%; }
+	.reveal p {
+	max-width: 55%;
+	}
+	p.nav-info {
+	display: block;
+	position:absolute;
+	top: 745px;
+	left:20%;
+	width: 100%;
+	max-width: 100%;
+	}
+}
